@@ -252,6 +252,7 @@
   width: 440px;
   height: 440px;
   object-fit: cover;
+  border-radius: 12px;
 }
 .promo-link{
   display: inline-block;
