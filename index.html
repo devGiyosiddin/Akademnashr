@@ -15,24 +15,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <!-- HEADER -->
+  
+  
+  <!-- HEADER -->
+  <header class="site-header">  
+    <a href="index.html" class="logo-link">
+      <img src="img/logo.svg" alt="Akademnashr logo" width="227" height="60">
+    </a>
+    
     <div class="site-header-actions">
-      <a href="index.html" class="logo-link">
-        <img src="img/logo.svg" alt="Akademnashr logo" width="227" height="60">
-      </a>
+      <!-- SiteNav -->
       <nav>
         <ul class="sitenav-list">
-          <li><a href="#" class="sitenav-link">Bosh sahifa</a></li>
-          <li><a href="#"  class="sitenav-link">Kitoblar</a></li>
-          <li><a href="#" class=sitenav-link>Akciyalar</a></li>
-          <li><a href="#"  class="sitenav-link">Kontaktlar</a></li>
+          <li class="sitenav-item"><a href="#" class="sitenav-link">Bosh sahifa</a></li>
+          <li class="sitenav-item"><a href="#"  class="sitenav-link">Kitoblar</a></li>
+          <li class="sitenav-item"><a href="#" class=sitenav-link>Akciyalar</a></li>
+          <li class="sitenav-item"><a href="#"  class="sitenav-link">Kontaktlar</a></li>
         </ul>
       </nav>
-      <button class="main-link">Ro'yxatdan o'tish</button>
-      <!-- <a href="#" class="main-link">Ro'yxatdan o'tish</a> -->
+      
+      <a href="#" class="main-link">Ro'yxatdan o'tish</a>
     </div>
   </header>
+  
+  
   <main>
     <!-- HERO -->
     <section class="hero">
@@ -81,8 +87,10 @@
     <section class="promo">
       <div class="promo-content">
         <h2 class="promo-heading">Bolalar kitoblari uchun ajoyib akciya!</h2>
-        <p class="promo-text">Ertaklar, she'rlar, sarguzasht asarlar, fikrlashni o'stirish uchun turli mashq qo'llanmalari va komikslari.</p>
-        <p class="promo-text">Aksiyadagi eng katta to'plamda <strong class="promo-highlight">50 ta kitob</strong >ni <strong class="promo-highlight">350 ming </strong>so'mga (aslida 383 ming so'm) sotib olishingiz mumkin.</p>
+        <div class="promo-info-wrapper">
+          <p class="promo-text">Ertaklar, she'rlar, sarguzasht asarlar, fikrlashni o'stirish uchun turli mashq qo'llanmalari va komikslari.</p>
+          <p class="promo-text">Aksiyadagi eng katta to'plamda <strong class="promo-highlight">50 ta kitob</strong >ni <strong class="promo-highlight">350 ming </strong>so'mga (aslida 383 ming so'm) sotib olishingiz mumkin.</p>
+        </div>
         <a href="#" class="promo-link">Buyurtma berish</a>
       </div>
       <img src="img/sale-img.jpg" class="promo-img" alt="Kitoblar to'plami" width="440" height="440" srcset="img/sale-img.jpg 1x, img/sale-img@2x.jpg 2x" >
