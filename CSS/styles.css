@@ -123,6 +123,9 @@ html{
  .main-link:active{
   opacity:0.6;
  }
+ 
+ 
+ /* HERO */
 .hero{
   background:#252420;
   padding-top: 80px;
