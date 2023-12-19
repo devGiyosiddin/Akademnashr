@@ -434,9 +434,26 @@ html{
     width: 20.36%;
     margin-right: 6.18%;
   }
+  .feature {
+    width: 30%;
+    margin-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .features {
+    padding: 150px 0;
+  }
 }
 
 @media only screen and (max-width: 760px) {
+  .features {
+    padding: 90px 0;
+  }
+  .features-heading {
+    font-size: 54px;
+    margin-bottom: 54px;
+  }
   .site-footer__bottom {
     flex-wrap: wrap;
   }
@@ -453,6 +470,23 @@ html{
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .features-list { 
+    flex-wrap: wrap;
+  }
+  .feature {
+    width: 47%;
+    margin-right: 6%;
+    margin-bottom: 36px;
+  }
+  .feature:nth-child(2n) {
+    margin-right: 0;
+  }
+  .feature-icon-wrapper {
+    margin-bottom: 16px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .site-footer__links {
     width: 46%;
@@ -466,6 +500,21 @@ html{
   }
 }
 @media only screen and (max-width: 530px) {
+  .feature {
+    width: 100%;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 46px;
+  }
+  .orange-line {
+    margin: 0 auto 20px;
+  }
+  .features-heading {
+    width: 100%;
+    text-align: center;
+  }
   .site-footer {
     padding: 36px 0;
   }
@@ -478,6 +527,12 @@ html{
   }
 }
 @media only screen and (max-width: 400px) {
+  .features {
+    padding: 70px 0;
+  }
+  .features-heading {
+    font-size: 36px;
+  }
   .site-footer__links {
     width: 100%;
     margin-right: 0;
