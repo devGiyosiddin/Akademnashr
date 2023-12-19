@@ -429,6 +429,8 @@ html{
   padding-bottom: 30px;
 }
 
+
+/* MEDIA */
 @media only screen and (max-width: 1140px) {
   .site-footer__links {
     width: 20.36%;
