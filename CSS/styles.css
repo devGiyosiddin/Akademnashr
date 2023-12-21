@@ -700,6 +700,7 @@ body{
   .menu-list--open .sitenav-link {
     color:#fff;
     font-size: 24px;
+    white-space: nowrap;
   }
   .menu-list--open .main-link {
     max-width: 177px;
@@ -753,6 +754,10 @@ body{
   }
 }
 @media only screen and (max-width: 400px) {
+  .menu-list--open .sitenav-link {
+    color:#fff;
+    font-size: 22px;
+  }
   .hero-img {
     max-width: 100%;
     height: auto;
