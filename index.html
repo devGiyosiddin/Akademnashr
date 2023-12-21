@@ -32,7 +32,7 @@
           </ul>
         </nav>
 
-        <a href="#" class="main-link">Ro'yxatdan o'tish</a>
+        <a href="index.html" class="main-link">Ro'yxatdan o'tish</a>
       </div>
     </div>
   </header>
@@ -194,10 +194,23 @@
     const elSiteActions = document.querySelector('.site-header-actions');
     if(elMenuButton) {
       elMenuButton.addEventListener('click', function() {
-        elMenuButton.classList.toggle('menu--open');
         elSiteActions.classList.toggle('menu-list--open');
       });
     };
-  </script>
+    const elsSitenavLink = document.querySelectorAll('.sitenav-link');
+    elsSitenavLink.forEach(function (elLink) {
+      elLink.addEventListener('click', function() {
+        elSiteActions.classList.remove('menu-list--open');
+        elMenuButton.classList.remove('menu--open');
+      });
+    });
+    const elMainLink = document.querySelector('.main-link');
+    if(elMainLink) {
+      elMainLink.addEventListener('click', function() {
+        elSiteActions.classList.remove('menu-list--open');
+        elMenuButton.classList.remove('menu--open');
+      });
+    };
+    </script>
 </body>
 </html>
