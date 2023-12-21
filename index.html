@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="uz">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,24 +9,26 @@
   <link rel="stylesheet" href="css/styles.css">
   <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <!-- <link rel="stylesheet" href="css/styles.min.css"> -->
-
 </head>
 <body>
   <!-- HEADER -->
-  <header class="site-header">
+  <header class="site-header" id="site-header">
     <div class="site-header-container container">
       <a href="index.html" class="logo-link">
         <img src="img/logo.svg" alt="Akademnashr logo" width="227" height="60">
       </a>
-
+      <!-- Menu -->
+      <button type="button" class="site-header__menu js-menu-button">
+        <span class="site-header__menu-line"></span>
+      </button>
       <div class="site-header-actions">
         <!-- SITENAV -->
-        <nav>
+        <nav class="sitenav">
           <ul class="sitenav-list">
-            <li class="sitenav-item"><a href="#" class="sitenav-link">Bosh sahifa</a></li>
-            <li class="sitenav-item"><a href="#" class="sitenav-link">Kitoblar</a></li>
-            <li class="sitenav-item"><a href="#" class=sitenav-link>Akciyalar</a></li>
-            <li class="sitenav-item"><a href="#" class="sitenav-link">Kontaktlar</a></li>
+            <li class="sitenav-item"><a href="#site-header" class="sitenav-link">Bosh sahifa</a></li>
+            <li class="sitenav-item"><a href="#hero" class="sitenav-link">Kitoblar</a></li>
+            <li class="sitenav-item"><a href="#promo" class=sitenav-link>Akciyalar</a></li>
+            <li class="sitenav-item"><a href="#site-footer" class="sitenav-link">Kontaktlar</a></li>
           </ul>
         </nav>
 
@@ -39,7 +40,7 @@
 
   <main>
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero-container container">
         <div class="hero-content">
           <hr class="orange-line">
@@ -99,7 +100,7 @@
     </section>
 
     <!-- PROMO -->
-    <section class="promo">
+    <section class="promo" id="promo">
       <div class="container">
         <div class="promo-inner">
           <div class="promo-content">
@@ -121,7 +122,7 @@
   </main>
 
   <!-- SITE FOOTER -->
-  <footer class="site-footer">
+  <footer class="site-footer" id="site-footer">
     <div class="container">
       <div class="site-footer__top">
         <a href="index.html" class="logo-link site-footer__logo-link">
@@ -187,6 +188,16 @@
       </div>
     </div>
   </footer>
-</body>
 
+  <script>
+    const elMenuButton = document.querySelector('.js-menu-button');
+    const elSiteActions = document.querySelector('.site-header-actions');
+    if(elMenuButton) {
+      elMenuButton.addEventListener('click', function() {
+        elMenuButton.classList.toggle('menu--open');
+        elSiteActions.classList.toggle('menu-list--open');
+      });
+    };
+  </script>
+</body>
 </html>
