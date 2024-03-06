@@ -84,6 +84,27 @@ body{
   margin-right: auto;
 }
 
+/* BUTTON */
+.main-link{
+  min-width: 152px;
+  height: 39px;
+  color:#fff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border-radius: 4px;
+  background: var(--accent-color);
+  transition: opacity 0.4s ease;
+  padding: 12px 24px;
+}
+.main-link:hover{
+  opacity: 0.8;
+}
+.main-link:active{
+  opacity:0.6;
+}
+
 /* MENU */
 .site-header__menu {
   display: none;
@@ -173,6 +194,12 @@ body{
 .sitenav-item:last-child{
   margin-right:0;
 }
+
+.sitenav-item--active .sitenav-link {
+  color: #ff7500;
+  border-bottom: 3px solid var(--accent-color);
+}
+
 .sitenav-link{
   font-family: var(--text-font);
   font-size: 13px;
@@ -187,25 +214,27 @@ body{
   opacity 0.4s ease;
 }
 .sitenav-link:hover{
-  border-bottom: 3px solid var(--accent-color);
+  color: #ff7500;
 }
 .sitenav-link:active{
   opacity:0.6;
 }
 .main-link{
-  display:inline-block;
-  padding: 12px 24px;
-  border-radius: 4px;
-  font-size: 16px;
+  width: 155px;
+  height: 39px;
+  color:#fff;
+  font-size: 13px;
   font-weight: bold;
   line-height: 1.5;
-  background-color: var(--accent-color);
-  color:#fff;
+  letter-spacing: 0.04em;
   text-decoration: none;
+  border-radius: 4px;
+  background-color: var(--accent-color);
   transition: opacity 0.4s ease;
+  padding: 12px 24px;
 }
 .main-link:hover{
-  opacity:0.8;
+  opacity: 0.8;
 }
 .main-link:active{
   opacity:0.6;
@@ -240,6 +269,7 @@ body{
   font-family: var(--font-heading);
   font-size: 40px;
   line-height: 1.2;
+  letter-spacing: 0.01em;
   margin-top: 0;
   margin-bottom: 24px;
 }
@@ -257,24 +287,9 @@ body{
   border-radius: 8px;
   box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
 
-} 
-.hero-link{
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 1.5;
-  text-decoration: none;
-  color:#fff; 
-  background-color: var(--accent-color);
-  transition: opacity 0.4s ease;
 }
-.hero-link:hover{
-  opacity:0.8;
-}
-.hero-link:active{
-  opacity: 0.6;
+.hero-link {
+
 }
 
 /* FEATURE */
@@ -389,25 +404,8 @@ body{
   right: 64px;
   top: -85px;
 }
-.promo-link{
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 4px;
-  font-weight: bold;
-  color:#fff;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.5px;
-  background-color: var(--accent-color);
-  transition: opacity 0.4s ease;
-}
-.promo-link:hover{
-  opacity:0.8;
-}
-.promo-link:active{
-  opacity: 0.6;
+.promo-link {
+  
 }
 
 /* FOOTER */
