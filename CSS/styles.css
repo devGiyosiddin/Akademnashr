@@ -91,6 +91,7 @@ body{
   color:#fff;
   font-size: 13px;
   font-weight: bold;
+  line-height: 1.2;
   letter-spacing: 0.04em;
   text-decoration: none;
   border-radius: 4px;
@@ -219,26 +220,6 @@ body{
 .sitenav-link:active{
   opacity:0.6;
 }
-.main-link{
-  width: 155px;
-  height: 39px;
-  color:#fff;
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  text-decoration: none;
-  border-radius: 4px;
-  background-color: var(--accent-color);
-  transition: opacity 0.4s ease;
-  padding: 12px 24px;
-}
-.main-link:hover{
-  opacity: 0.8;
-}
-.main-link:active{
-  opacity:0.6;
-}
 
 
 /* HERO */
@@ -359,35 +340,36 @@ letter-spacing: 0.03em;
   display:flex;
   justify-content: space-between;
   align-items: center;
-  padding: 64px;
   color:#fff;
   border-radius: 12px;
   background-color: #252420;
+  padding: 64px;
 }
 .promo-content{
   width: 440px;
 }
-.promo-text{
-  margin-top:0;
-  margin-bottom: 12px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-}
-.promo-text:last-child{
-  margin-bottom:0;
+.promo-heading{
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  font-family: var(--font-heading);
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 .promo-info-wrapper{
   margin-bottom: 24px;
 }
-.promo-heading{
-  font-family: var(--font-heading);
-  font-size: 40px;
-  line-height: 48px;
-  margin-top: 0;
-  font-weight: bold;
-  margin-bottom: 24px;
+.promo-text{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  margin-top:0;
+  margin-bottom: 12px;
+}
+.promo-text:last-child{
+  margin-bottom:0;
 }
 .promo-highlight{
   color: var(--accent-color);
@@ -475,7 +457,7 @@ letter-spacing: 0.03em;
   opacity: 0.6;
 }
 .site-footer__divider{
-  height: 2px;
+  height: 1px;
   background-color: rgba(37, 36, 32, 0.5);
   margin: 0;
   margin-top: 40px;
