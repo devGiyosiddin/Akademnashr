@@ -176,28 +176,6 @@
     </div>
   </footer>
 
-  <script>
-    const elMenuButton = document.querySelector('.js-menu-button');
-    const elSiteActions = document.querySelector('.site-header-actions');
-    if(elMenuButton) {
-      elMenuButton.addEventListener('click', function() {
-        elSiteActions.classList.toggle('menu-list--open');
-      });
-    };
-    const elsSitenavLink = document.querySelectorAll('.sitenav-link');
-    elsSitenavLink.forEach(function (elLink) {
-      elLink.addEventListener('click', function() {
-        elSiteActions.classList.remove('menu-list--open');
-        elMenuButton.classList.remove('menu--open');
-      });
-    });
-    const elMainLink = document.querySelector('.main-link');
-    if(elMainLink) {
-      elMainLink.addEventListener('click', function() {
-        elSiteActions.classList.remove('menu-list--open');
-        elMenuButton.classList.remove('menu--open');
-      });
-    };
-    </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
