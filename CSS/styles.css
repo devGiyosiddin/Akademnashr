@@ -679,6 +679,9 @@ body{
     position: static;
     margin-right: 30px;
   }
+  .login-body {
+    height: 80vh;
+  }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -736,6 +739,9 @@ body{
   .promo-img {
     width: 320px;
     height: 320px;
+  }
+  .login-body {
+    height: 70vh;
   }
 }
 
@@ -823,6 +829,9 @@ body{
   .site-footer__links:nth-child(3n) {
     margin-right: 0;
   }
+  .login-body {
+    height: 65vh;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -905,6 +914,9 @@ body{
   }
   .site-footer__links:nth-child(even) {
     margin-right: 0;
+  }
+  .login-body {
+    height: 55vh;
   }
 }
 @media only screen and (max-width: 530px) {
