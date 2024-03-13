@@ -430,7 +430,7 @@ body{
   color: blue;
 }
 
-#container button{
+#container button {
   background-color: var(--accent-color);
   color: #fff;
   font-size: 12px;
@@ -442,6 +442,14 @@ body{
   text-transform: uppercase;
   margin-top: 10px;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+#container button:hover {
+  opacity: 0.8;
+  border-color: var(--accent-color);
+}
+#container button:hover {
+  opacity: 0.6;
 }
 
 #container button.hidden{
@@ -1037,7 +1045,7 @@ body{
     width: 120%;
     outline: none;
   }
-  .container button{
+  .container button {
     background-color: #f12711;
     color: #fff;
     font-size: 11px;
