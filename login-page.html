@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akademnashr - Login</title>
-
+    
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -80,7 +80,17 @@
             </div>
         </div>
     </div>
-
-    <script src="JS/script.js"></script>
+    
+    <script>
+        const container = document.getElementById('container');
+        const registerBtn = document.getElementById('register');
+        const loginBtn = document.getElementById('login');
+        registerBtn.addEventListener('click', () => {
+            container.classList.add("active");
+        });
+        loginBtn.addEventListener('click', () => {
+            container.classList.remove("active");
+        });
+    </script>
 </body>
 </html>
