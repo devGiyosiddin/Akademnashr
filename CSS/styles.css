@@ -386,7 +386,7 @@ body{
 
 
 /* LOGIN - PAGE */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap'); */
 
 .login-body {
   background-color: #c9d6ff;
@@ -832,8 +832,72 @@ body{
   .site-footer__links:nth-child(3n) {
     margin-right: 0;
   }
+  #container {
+    width: 80%;
+    max-width: 100%;
+    min-height: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  }
   #container span {
     font-size: 10px;
+  }
+  .social-icons a {
+    font-size: 10px;
+    border-radius: 30%;
+    margin: 1px 3px 3px;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+  }
+  .toggle-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 75px 0 0 50px;
+    z-index: 500;
+  }
+  .sign-in{
+    left: 0;
+    width: 50%;
+    z-index: 1;
+  }
+  .sign-up{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+  }
+  #container form {
+    font-size: 15px;
+  }
+  #container input {
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 10px;
+    border-radius: 8px;
+    width: 120%;
+    outline: none;
+  }
+  #container button {
+    background-color: #f12711;
+    color: #fff;
+    font-size: 11px;
+    padding: 5px 25px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    cursor: pointer;
   }
 }
 
@@ -953,6 +1017,9 @@ body{
     margin-right: 0;
     margin-bottom: 20px;
   }
+  #container .forget-link {
+    white-space: initial;
+  }
 }
 @media only screen and (max-width: 400px) {
   .menu-list--open .sitenav-link {
@@ -1003,87 +1070,7 @@ body{
   }
 }
 
-
-/* ADAPTIVE  for mobile devices */
-
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  #container {
-    position: center;
-    width: 80%;
-    max-width: 100%;
-    min-height: 500px;
-    overflow: hidden;
-    border-radius: 30px;
-    background-color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-  }
-  .social-icons a {
-    font-size: 10px;
-    border-radius: 30%;
-    margin: 1px 3px 3px;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-  }
-  .toggle-container{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    transition: all 0.6s ease-in-out;
-    border-radius: 75px 0 0 50px;
-    z-index: 500;
-  }
-  h1 {
-    font-size: 20px;
-  }
-  .span{
-    font-size: 3px;
-  }
-  #container a {
-    /* font-size: 10px; */
-  }
-  #container form {
-    font-size: 15px;
-  }
-  #container input {
-    border: none;
-    margin: 8px 0;
-    padding: 10px 15px;
-    font-size: 10px;
-    border-radius: 8px;
-    width: 120%;
-    outline: none;
-  }
-  #container button {
-    background-color: #f12711;
-    color: #fff;
-    font-size: 11px;
-    padding: 5px 25px;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    margin-top: 15px;
-    cursor: pointer;
-  }
-  .sign-in{
-    left: 0;
-    width: 50%;
-    z-index: 1;
-  }
-  .sign-up{
-    left: 0;
-    width: 50%;
-    opacity: 0;
-    z-index: 1;
-  }
-}
-
-
+/* animations */
 @keyframes menuAnimation {
   from {opacity: 0;}
   to {opacity: 1;}
