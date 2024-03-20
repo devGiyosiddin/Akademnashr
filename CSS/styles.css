@@ -920,6 +920,16 @@ body{
     padding-right: 20px;
     padding-left: 20px;
   }
+  #container h1 {
+    font-size: 1.5rem;
+  }
+  #container {
+    height: 80%;
+  }
+  #container .forget-link,
+  #container span {
+    line-height: 1rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
