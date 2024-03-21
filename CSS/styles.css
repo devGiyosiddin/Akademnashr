@@ -1081,7 +1081,7 @@ body{
   .body-link .sign-up .icon {
     background: #fff;
   }
-  .sign-in button {
+  #container .sign-in button  {
     background: #ffa406;
   }
 }
