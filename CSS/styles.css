@@ -608,6 +608,9 @@ body{
 .container.active .toggle-right{
   transform: translateX(200%);
 }
+.kirish-link {
+  display: none;
+}
 
 
 /* FOOTER */
@@ -1061,6 +1064,9 @@ body{
 @media only screen and (max-width: 500px) {
   #container {
     height: 70vh;
+  }
+  .kirish-link {
+    display: block;
   }
   .login-body {
     background: rgb(255,118,5);
