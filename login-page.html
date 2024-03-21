@@ -6,7 +6,6 @@
     <title>Akademnashr - Login</title>
     
     <!-- Styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="css/styles.min.css">
@@ -38,6 +37,7 @@
                 <input type="password" 
                 placeholder="Parol">
                 <button>Ro'yxatdan o'tish</button>
+                <a class="kirish-link" href="#">KIrish</a>
             </form>
         </div>
         <div class="form-container sign-in">
@@ -64,6 +64,7 @@
                 placeholder="Parol">
                 <a class="forget-link" href="">Email yoki parolni unutdingizmi ?</a>
                 <button>Kirish</button>
+                <a class="kirish-link royxatga-olish-link" href="#">Ro'yxatdan o'tish</a>
             </form>
         </div>
         <div class="toggle-container">
@@ -83,15 +84,23 @@
     </div>
     
     <script>
-        const container = document.getElementById('container');
-        const registerBtn = document.getElementById('register');
-        const loginBtn = document.getElementById('login');
+        const container = document.getElementById('container'),
+         registerBtn = document.getElementById('register'),
+         loginBtn = document.getElementById('login'),
+         kirishBtn = document.querySelectorAll('.kirish-link'),
+         royxatgaOlishBtn = document.querySelector('.royxatga-olish-link')
+
         registerBtn.addEventListener('click', () => {
             container.classList.add("active");
         });
         loginBtn.addEventListener('click', () => {
             container.classList.remove("active");
         });
+        kirishBtn.forEach((link) => {
+            link.addEventListener('click', () =>{
+                document.body.classList.toggle  ('body-link');
+            })
+        })
     </script>
 </body>
 </html>
