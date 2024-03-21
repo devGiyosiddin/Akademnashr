@@ -386,8 +386,6 @@ body{
 
 
 /* LOGIN - PAGE */
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap'); */
-
 .login-body {
   background-color: #c9d6ff;
   background: linear-gradient(to right, #e2e2e2, #c9d6ff);
@@ -467,6 +465,11 @@ body{
   height: 100%;
 }
 
+#container h1 {
+  text-align: center;
+  line-height: 2rem;
+}
+
 #container input{
   background-color: #eee;
   border: none;
@@ -493,6 +496,12 @@ body{
   margin: 0;
   margin-top: 10px;
   padding: 0;
+}
+
+.sign-in a:hover i,
+.sign-up a:hover i {
+  transform: scale(1.5);
+  transition: 0.4s ease;
 }
 
 .sign-in{
@@ -756,8 +765,6 @@ body{
 }
 
 @media only screen and (max-width: 840px) {
-  
-  
   .promo-inner {
     flex-direction: column;
     margin: 0 -20px;
@@ -774,6 +781,12 @@ body{
     object-position: top;
     border-radius: 22px;
   }
+  #container button {
+    font-size: 11px;
+  }
+  #container .sign-up button {
+    font-size: 9px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -783,6 +796,9 @@ body{
   }
   #container a {
     font-size: 11px;
+  }
+  #container form span {
+    font-size: 10px;
   }
 }
 
@@ -1043,6 +1059,9 @@ body{
 }
 
 @media only screen and (max-width: 500px) {
+  #container {
+    height: 70vh;
+  }
   .login-body {
     background: rgb(255,118,5);
     background: linear-gradient(90deg, rgba(255,118,5,1) 0%, rgba(255,227,7,0.9977124638918067) 100%); 
@@ -1060,10 +1079,6 @@ body{
   }
   .sign-in i {
     color: #ffa406;
-  }
-  .sign-in a:hover i,
-  .sign-up a:hover i {
-    transform: scale(1.5);
   }
   #container input {
     width: 100%;
@@ -1088,7 +1103,7 @@ body{
     background: linear-gradient(90deg, rgba(255,118,5,1) 0%, rgba(255,227,7,0.9977124638918067) 100%);
     color: #fff;
   }
-  .body-link .sign-up .icon {
+  .body-link #container .sign-up .icon {
     background: #fff;
   }
   #container .sign-in button  {
