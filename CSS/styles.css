@@ -465,6 +465,11 @@ body{
   height: 100%;
 }
 
+#container h1 {
+  text-align: center;
+  line-height: 2rem;
+}
+
 #container input{
   background-color: #eee;
   border: none;
@@ -491,6 +496,12 @@ body{
   margin: 0;
   margin-top: 10px;
   padding: 0;
+}
+
+.sign-in a:hover i,
+.sign-up a:hover i {
+  transform: scale(1.5);
+  transition: 0.4s ease;
 }
 
 .sign-in{
@@ -754,8 +765,6 @@ body{
 }
 
 @media only screen and (max-width: 840px) {
-  
-  
   .promo-inner {
     flex-direction: column;
     margin: 0 -20px;
@@ -772,6 +781,12 @@ body{
     object-position: top;
     border-radius: 22px;
   }
+  #container button {
+    font-size: 11px;
+  }
+  #container .sign-up button {
+    font-size: 9px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -781,6 +796,9 @@ body{
   }
   #container a {
     font-size: 11px;
+  }
+  #container form span {
+    font-size: 10px;
   }
 }
 
@@ -1061,10 +1079,6 @@ body{
   }
   .sign-in i {
     color: #ffa406;
-  }
-  .sign-in a:hover i,
-  .sign-up a:hover i {
-    transform: scale(1.5);
   }
   #container input {
     width: 100%;
