@@ -132,11 +132,12 @@ body{
 .light {
   display: none;
 }
-
 .moon {
   color: black;
 }
-
+.dark-theme .logo-link svg path {
+  color: #999;
+}
 
 
 /* BUTTON */
@@ -221,7 +222,8 @@ body{
   justify-content:space-between; 
   align-items:center;
 }
-.logo-link{
+.logo-link {
+  color: #000;
   transition: opacity 0.4s ease;
 }
 .logo-link:hover{ 
