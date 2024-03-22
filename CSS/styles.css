@@ -57,7 +57,7 @@ html{
   box-sizing: inherit;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -89,7 +89,8 @@ body{
 .dark-theme body,
 .dark-theme .site-header,
 .dark-theme .site-footer, 
-.dark-theme main {
+.dark-theme main,
+.dark-theme .login-body {
   background-color: #444;
 }
 
@@ -136,7 +137,7 @@ body{
   color: black;
 }
 .dark-theme .logo-link svg path {
-  color: #999;
+  color: #faf6f8;
 }
 
 
