@@ -1,3 +1,4 @@
+// Menu
 const elMenuButton = document.querySelector('.js-menu-button');
 const elSiteActions = document.querySelector('.site-header-actions');
 const elSiteHeader = document.querySelector('#site-header');
@@ -22,3 +23,9 @@ if(elMainLink) {
     elMenuButton.classList.remove('menu--open');
     });
 };
+
+// Theme switcher
+const themeSwitcher = document.querySelector('#theme-switcher');
+themeSwitcher.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+});
