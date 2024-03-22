@@ -853,6 +853,11 @@ body{
 }
 
 @media only screen and (max-width: 760px) {
+  #theme-switcher {
+    position: absolute;
+    right: 30px;
+    top: 50px;
+  }
   .hero-container {
     flex-direction: column-reverse;
   }
@@ -1009,6 +1014,14 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
+  #theme-switcher {
+    left: 20px;
+    top: 35px;
+    z-index: 100;
+  }
+  #theme-switcher .moon {
+    color: #fff;
+  }
   .site-header-container {
     flex-direction: row;
   }
