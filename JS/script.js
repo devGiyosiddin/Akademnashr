@@ -30,6 +30,7 @@ themeSwitcher.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme');
 });
 
+
 // Проверяем, поддерживает ли браузер Media Query prefers-color-scheme
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
     // Если пользователь предпочитает темную тему, добавляем класс dark-theme к <body>
