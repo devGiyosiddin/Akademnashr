@@ -24,26 +24,6 @@ if(elMainLink) {
     });
 };
 
-// Login-Switcher
-const container = document.getElementById('container'),
-         registerBtn = document.getElementById('register'),
-         loginBtn = document.getElementById('login'),
-         kirishBtn = document.querySelectorAll('.kirish-link'),
-         royxatgaOlishBtn = document.querySelector('.royxatga-olish-link')
-
-        registerBtn.addEventListener('click', () => {
-            container.classList.add("active");
-        });
-        loginBtn.addEventListener('click', () => {
-            container.classList.remove("active");
-        });
-        kirishBtn.forEach((link) => {
-            link.addEventListener('click', () =>{
-                document.body.classList.toggle  ('body-link');
-            })
-        })
-
-
 // THEME SWITCHER
 const themeSwitcher = document.querySelector('#theme-switcher');
 themeSwitcher.addEventListener('click', () => {
