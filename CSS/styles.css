@@ -40,7 +40,8 @@
 :root {
   --accent-color: #ff7500;
   --text-font: "Roboto", "Arial", sans-serif;
-  --font-heading: "Roboto Condensed", "Roboto", "Arial", sans-serif
+  --font-heading: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+  --dark-theme-box-bg: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
 }
 
 
@@ -91,6 +92,13 @@ body{
 .dark-theme main {
   background-color: #444;
 }
+
+.dark-theme .hero,
+.dark-theme .promo-inner {
+  background: #000;
+  background: var(--dark-theme-box-bg);
+}
+
 .dark-theme body,
 .dark-theme .sitenav-link,
 .dark-theme main,
