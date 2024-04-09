@@ -184,6 +184,12 @@ body {
   background-color: #000;
 }
 
+.dark-theme .site-header__menu-line,
+.dark-theme .site-header__menu::before,
+.dark-theme .site-header__menu::after {
+  background-color: #fff;
+}
+
 .site-header__menu::before,
 .site-header__menu::after {
   content: "";
@@ -209,6 +215,12 @@ body {
   background-color: #fff;
   bottom: 50%;
   transform: rotate(45deg) translate(0, 50%);
+}
+
+.dark-theme .bgcolor .site-header__menu-line,
+.bgcolor .site-header__menu::before,
+.bgcolor .site-header__menu::after {
+  background-color: #fff;
 }
 
 /* SITE HEADER */
@@ -1220,6 +1232,9 @@ body {
   }
   .site-footer__links:nth-child(3n) {
     margin-right: 0;
+  }
+  .site-footer__links:not(:last-child) {
+    margin-bottom: 40px;
   }
 }
 

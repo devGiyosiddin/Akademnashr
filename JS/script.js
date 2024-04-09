@@ -51,5 +51,5 @@ window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
     } else {
         // Удаляем класс dark-theme из <body>
         document.body.classList.remove('dark-theme');
-    }
+    };
 });
